@@ -27,7 +27,7 @@ class SetterCommand extends Command
 		$this->storage = $hostnameStorage;
 	}
 
-	public function configure()
+	public function configure(): void
 	{
 		$this->addArgument('key', InputArgument::OPTIONAL);
 		$this->addArgument('value', InputArgument::OPTIONAL);
